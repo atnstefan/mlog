@@ -10,12 +10,12 @@ var logger = require('../lib/logger');
 var logConfiguration = {
   "level": "INFO",
   "loggers": {
-    "console": {
+    "null": {
     }
   }
 };
 
 var log = new logger(logConfiguration);
 
-log.info('Test info log');
-log.error('Test error log with stack trace');
+log.info('Test info log to null. It will not show up anywhere.');
+log.error('Test error log with stack trace. It will show up anywhere.');
