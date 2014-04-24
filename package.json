@@ -4,7 +4,7 @@
   "description": "Multi logger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "dependencies": {
     "mongoose": "3.8.8",
     "riak-js": "0.10.2"
+  },
+  "dev-dependencies": {
+    "mocha": "1.18.2"
   }
 }
