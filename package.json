@@ -1,0 +1,27 @@
+{
+  "name": "mlog",
+  "version": "0.0.4",
+  "description": "Multi logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snegrea/mlog.git"
+  },
+  "keywords": [
+    "log",
+    "mongodb"
+  ],
+  "author": "Stefan Negrea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snegrea/mlog/issues"
+  },
+  "homepage": "https://github.com/snegrea/mlog",
+  "dependencies": {
+    "mongoose": "3.8.8",
+    "riak-js": "0.10.2"
+  }
+}
