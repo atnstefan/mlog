@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/snegrea/mlog",
   "dependencies": {
-    "mongoose": "3.8.8",
+    "mongoose": "3.8.9",
     "riak-js": "0.10.2"
   },
   "devDependencies": {
