@@ -8,20 +8,21 @@ var logger = require('../lib/logger');
 
 
 var logConfiguration = {
-  "level": "INFO",
-  "loggers": {
-    "mongodb": {
-    },
+  'level': 'INFO',
+  'loggers': {
+    'mongodb': true,
     //added here for visual feedback
-    "console": {
-    }
+    'console': true,
+    'riak': false
   }
 };
 
 var log = new logger(logConfiguration);
 
-setInterval(function(){
+setInterval(function() {
   log.info('Test info log');
 }, 1000);
 
-log.error('Test error log with stack trace');
+setInterval(function() {
+  log.error('Test error log with stack trace');
+}, 1000);
