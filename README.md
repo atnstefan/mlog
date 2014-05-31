@@ -10,24 +10,70 @@ mlog
 via npm:
 
     $ npm install mlog
+    
+## Support Log Providers
 
-## Example
+1. Console
+2. Mongo
+3. Riak
+4. Null
 
-    var logger = require('mlog');
-  
-    var logConfiguration = {
-      "level": "INFO",
-      "loggers": {
-        "console": {
-        }
-      }
-    };
-  
-    var log = new logger(logConfiguration);
-  
-    log.info('Test info log');
-    log.error('Test error log with stack trace');
 
+## Configuration
+
+With default provider configuration:
+
+```javascript
+var logConfiguration = {
+    "level": "INFO",
+    "loggers": {
+        "console": true
+    }
+}
+```
+
+To override default provider configuration:
+
+```javascript
+var logConfiguration = {
+    "level": "INFO",
+    "mongodb": {
+        "db": "logdatabase",
+        "host": "loghost"
+    }
+}
+```
+
+With multiple providers:
+```javascript
+var logConfiguration = {
+    'level': 'INFO',
+    'loggers': {
+        'mongodb': true,
+        'console': true,
+        'riak': false
+    }
+}
+````
+
+
+## Full Example
+
+```javascript
+var logger = require('mlog');
+  
+var logConfiguration = {
+  "level": "INFO",
+  "loggers": {
+    "console": true
+  }
+};
+  
+var log = new logger(logConfiguration);
+ 
+log.info('Test info log');
+log.error('Test error log with stack trace');
+```
 
 ## License
 
