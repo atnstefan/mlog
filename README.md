@@ -1,7 +1,7 @@
 mlog
 ====
 
-[![Build Status](https://travis-ci.org/snegrea/mlog.svg)](https://travis-ci.org/snegrea/mlog)
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Downloads][downloads-image]][npm-url]
 
 
 
@@ -77,6 +77,7 @@ log.error('Test error log with stack trace');
 
 ## License
 
+```
 The MIT License (MIT)
 
 Copyright (c) 2014 Stefan Negrea
@@ -98,3 +99,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
+
+
+
+[npm-url]: https://npmjs.org/package/mlog
+[npm-image]: http://img.shields.io/npm/v/mlog.svg
+[downloads-image]: http://img.shields.io/npm/dm/mlog.svg
+
+[travis-url]: https://travis-ci.org/snegrea/mlog
+[travis-image]: https://travis-ci.org/snegrea/mlog.svg
+
+
+
+
