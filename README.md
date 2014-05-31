@@ -11,7 +11,7 @@ via npm:
 
     $ npm install mlog
     
-## Support Log Providers
+## Log Providers
 
 1. Console
 2. Mongo
