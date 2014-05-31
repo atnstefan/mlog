@@ -9,25 +9,24 @@ mlog
 
 via npm:
 
-  $ npm install mlog
+    $ npm install mlog
 
 ## Example
 
-  var logger = require('mlog');
-
-
-  var logConfiguration = {
-    "level": "INFO",
-    "loggers": {
-      "console": {
+    var logger = require('mlog');
+  
+    var logConfiguration = {
+      "level": "INFO",
+      "loggers": {
+        "console": {
+        }
       }
-    }
-  };
-
-  var log = new logger(logConfiguration);
-
-  log.info('Test info log');
-  log.error('Test error log with stack trace');
+    };
+  
+    var log = new logger(logConfiguration);
+  
+    log.info('Test info log');
+    log.error('Test error log with stack trace');
 
 
 ## License
