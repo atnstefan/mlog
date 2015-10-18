@@ -21,10 +21,9 @@
   },
   "homepage": "https://github.com/snegrea/mlog",
   "dependencies": {
-    "mongoose": "3.8.12",
-    "riak-js": "0.10.2"
+    "mongoose": "4.1.11"
   },
   "devDependencies": {
-    "mocha": "1.20.0"
+    "mocha": "2.3.3"
   }
 }
