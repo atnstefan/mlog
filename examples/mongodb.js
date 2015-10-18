@@ -12,8 +12,7 @@ var logConfiguration = {
   'loggers': {
     'mongodb': true,
     //added here for visual feedback
-    'console': true,
-    'riak': false
+    'console': true
   }
 };
 
@@ -21,7 +20,7 @@ var log = new logger(logConfiguration);
 
 setInterval(function() {
   log.info('Test info log');
-}, 1000);
+}, 10);
 
 setInterval(function() {
   log.error('Test error log with stack trace');
