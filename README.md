@@ -10,13 +10,12 @@ mlog
 via npm:
 
     $ npm install mlog
-    
+
 ## Log Providers
 
 1. Console
 2. Mongo
-3. Riak
-4. Null
+3. Null
 
 
 ## Configuration
@@ -50,8 +49,7 @@ var logConfiguration = {
     'level': 'INFO',
     'loggers': {
         'mongodb': true,
-        'console': true,
-        'riak': false
+        'console': true
     }
 }
 ````
@@ -61,16 +59,16 @@ var logConfiguration = {
 
 ```javascript
 var logger = require('mlog');
-  
+
 var logConfiguration = {
   "level": "INFO",
   "loggers": {
     "console": true
   }
 };
-  
+
 var log = new logger(logConfiguration);
- 
+
 log.info('Test info log');
 log.error('Test error log with stack trace');
 ```
@@ -109,7 +107,3 @@ SOFTWARE.
 
 [travis-url]: https://travis-ci.org/snegrea/mlog
 [travis-image]: https://travis-ci.org/snegrea/mlog.svg
-
-
-
-
