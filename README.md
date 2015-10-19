@@ -24,9 +24,9 @@ With default provider configuration:
 
 ```javascript
 var logConfiguration = {
-    "level": "INFO",
-    "loggers": {
-        "console": true
+    level: 'INFO',
+    loggers: {
+        'console': true
     }
 }
 ```
@@ -35,10 +35,12 @@ To override default provider configuration:
 
 ```javascript
 var logConfiguration = {
-    "level": "INFO",
-    "mongodb": {
-        "db": "logdatabase",
-        "host": "loghost"
+    level: INFO,
+    loggers: {
+      mongodb: {
+        db: 'logdatabase',
+        host: 'loghost'
+      }
     }
 }
 ```
@@ -61,9 +63,9 @@ var logConfiguration = {
 var logger = require('mlog');
 
 var logConfiguration = {
-  "level": "INFO",
-  "loggers": {
-    "console": true
+  level: 'INFO',
+  loggers: {
+    'console': true
   }
 };
 
