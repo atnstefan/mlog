@@ -48,13 +48,13 @@ var logConfiguration = {
 With multiple providers:
 ```javascript
 var logConfiguration = {
-    'level': 'INFO',
-    'loggers': {
-        'mongodb': true,
+    level: 'INFO',
+    loggers: {
+        mongodb: true,
         'console': true
     }
 }
-````
+```
 
 
 ## Full Example
