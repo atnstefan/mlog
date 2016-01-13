@@ -75,6 +75,53 @@ log.info('Test info log');
 log.error('Test error log with stack trace');
 ```
 
+## Notes
+
+Log levels
+```javascript
+EMERGENCY: 0
+ALERT: 1
+CRITICAL: 2
+ERROR: 3
+WARNING: 4
+NOTICE: 5
+INFO: 6
+DEBUG: 7
+```
+
+For `ERROR` and below:
+* if no instance of Error is logged, then the logger will get the current stack trace
+* if an instance of Error is logged, the stack trace from the respective Error is used
+* if multiple instances of Error are logged, the stack trace from the first Error is used
+
+
+```javascript
+var logger = require('mlog');
+
+var logConfiguration = {
+  level: 'INFO',
+  loggers: {
+    'console': true
+  }
+};
+
+var log = new logger(logConfiguration);
+
+//no instance of Error passed, the logger attempts to capture the stack trace
+log.error('Test info log', 'Second message', 'Third message');
+
+//one instance of Error passed, the logger uses it for the stack trace
+var error1 = new Error('bad error 1');
+log.error('Test error log with stack trace', error1);
+
+
+//multiple instances of Error passed, the logger uses the first one for the stack trace
+var error2 = new Error('bad error 2');
+var error3 = new Error('bad error 3');
+log.error('Test error log with stack trace', error2, error3);
+```
+
+
 ## License
 
 ```
