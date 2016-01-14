@@ -114,7 +114,6 @@ log.error('Test info log', 'Second message', 'Third message');
 var error1 = new Error('bad error 1');
 log.error('Test error log with stack trace', error1);
 
-
 //multiple instances of Error passed, the logger uses the first one for the stack trace
 var error2 = new Error('bad error 2');
 var error3 = new Error('bad error 3');
@@ -154,5 +153,5 @@ SOFTWARE.
 [npm-image]: http://img.shields.io/npm/v/mlog.svg
 [downloads-image]: http://img.shields.io/npm/dm/mlog.svg
 
-[travis-url]: https://travis-ci.org/snegrea/mlog
-[travis-image]: https://travis-ci.org/snegrea/mlog.svg
+[travis-url]: https://travis-ci.org/atnstefan/mlog
+[travis-image]: https://travis-ci.org/atnstefan/mlog.svg
