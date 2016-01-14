@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/snegrea/mlog",
   "dependencies": {
-    "mongoose": "4.1.11"
+    "mongoose": "4.3.5"
   },
   "devDependencies": {
-    "mocha": "2.3.3"
+    "mocha": "2.3.4"
   },
   "engineStrict" : true,
   "engines": {
-    "node": ">=4.1.0"
+    "node": ">=4.2.0"
   }
 }
